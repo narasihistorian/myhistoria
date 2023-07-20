@@ -1,25 +1,25 @@
-import Image from "next/image";
-import React from "react";
-import Link from "next/link";
+import Image from 'next/image';
+import React from 'react';
+import Link from 'next/link';
 
-import { Montserrat, Poppins } from "next/font/google";
+import { Montserrat, Poppins } from 'next/font/google';
 
-import napoleonwarBackground from "../../public/img/napoleonic-war.jpg";
-import ageOfDiscoverBackground from "../../public/img/age-of-discovery.jpg";
-import ancientRomeBackground from "../../public/img/ancient-rome.jpg";
+import napoleonwarBackground from '../../public/img/napoleonic-war.jpg';
+import ageOfDiscoverBackground from '../../public/img/age-of-discovery.jpg';
+import ancientRomeBackground from '../../public/img/ancient-rome.jpg';
 
 // font ---------------------------------------
 
 const montserratFont = Montserrat({
-  style: ["normal"],
-  subsets: ["latin"],
-  weight: ["400"],
+  style: ['normal'],
+  subsets: ['latin'],
+  weight: ['400'],
 });
 
 const poppinsFont = Poppins({
-  style: ["normal"],
-  subsets: ["latin"],
-  weight: ["400"],
+  style: ['normal'],
+  subsets: ['latin'],
+  weight: ['400'],
 });
 
 // main component ---------------------------------------
@@ -41,13 +41,14 @@ const Artikel = () => {
         <div className="relative overflow-hidden grid grid-cols-2 grid-rows-2 grid-flow-row gap-4 flex-1 py-10 fullHdMinWidth:grid-cols-3">
           {/* napoleonic war --------------------------------------------------------- */}
 
-          <div className="group relative w-full h-[30rem] col-span-1 fullHdMinWidth:h-[60rem] fullHdMinWidth:row-span-2">
+          <div className="group relative w-full h-[30rem] col-span-2 laptopMinWidth:col-span-1 fullHdMinWidth:h-[60rem] fullHdMinWidth:row-span-2">
             <Image
+              alt="napoleon"
               className="transition-transform"
               src={napoleonwarBackground}
               fill
               sizes="100vw"
-              style={{ objectFit: "cover" }}
+              style={{ objectFit: 'cover' }}
             />
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70" />
             <div className="absolute text-white  inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[90%] group-hover:translate-y-0 transition-all duration-500">
@@ -71,13 +72,14 @@ const Artikel = () => {
 
           {/* age of discovery --------------------------------------------------------- */}
 
-          <div className="group relative w-full h-[30rem] col-span-1 fullHdMinWidth:h-[60rem] fullHdMinWidth:row-span-2 ">
+          <div className="group relative w-full h-[30rem] col-span-2 laptopMinWidth:col-span-1 fullHdMinWidth:h-[60rem] fullHdMinWidth:row-span-2 ">
             <Image
+              alt="abad penjelajahan"
               className="transition-transform"
               src={ageOfDiscoverBackground}
               fill
               sizes="100vw"
-              style={{ objectFit: "cover" }}
+              style={{ objectFit: 'cover' }}
             />
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70" />
             <div className="absolute text-white  inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[90%] group-hover:translate-y-0 transition-all duration-500">
@@ -103,11 +105,12 @@ const Artikel = () => {
 
           <div className="group relative w-full h-[30rem] col-span-2 fullHdMinWidth:col-span-1 fullHdMinWidth:h-[60rem] fullHdMinWidth:row-span-2">
             <Image
+              alt="roma"
               className="transition-transform"
               src={ancientRomeBackground}
               fill
               sizes="100vw"
-              style={{ objectFit: "cover" }}
+              style={{ objectFit: 'cover' }}
             />
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70" />
             <div className="absolute text-white  inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[90%] group-hover:translate-y-0 transition-all duration-500">

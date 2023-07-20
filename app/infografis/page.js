@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import NavbarSections from "../components/Navbar";
-import InfografisSections from "./Infogragis";
+import NavbarSections from '../components/Navbar';
+import InfografisSections from './Infogragis';
 
 export default function Infografis() {
   return (

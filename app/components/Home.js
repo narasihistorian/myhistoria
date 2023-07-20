@@ -1,22 +1,22 @@
-import React from "react";
-import Image from "next/image";
+import React from 'react';
+import Image from 'next/image';
 
-import { Montserrat, Poppins } from "next/font/google";
+import { Montserrat, Poppins } from 'next/font/google';
 
-import homeBackground from "../../public/img/bg-1920.jpg";
+import homeBackground from '../../public/img/bg-1920.jpg';
 
 // font --------------------------------------------------
 
 const montserratFont = Montserrat({
-  style: ["normal"],
-  subsets: ["latin"],
-  weight: ["400"],
+  style: ['normal'],
+  subsets: ['latin'],
+  weight: ['400'],
 });
 
 const poppinsFont = Poppins({
-  style: ["normal"],
-  subsets: ["latin"],
-  weight: ["400"],
+  style: ['normal'],
+  subsets: ['latin'],
+  weight: ['400'],
 });
 
 // props --------------------------------------------------
@@ -26,13 +26,13 @@ const CardQuotes = (props) => {
     <>
       <div className="border-r border-gray-600">
         <div
-          className={`h-1/2 font-NelaSlabLight p-5 text-xs tabletMinWidth:text-lg laptopMinWidth:text-2xl fullHdMinWidth:text-4xl fullHdMinWidth:p-20`}
+          className={`h-1/2 font-NelaSlabLight p-5 text-xs tabletMinWidth:text-lg laptopMinWidth:text-3xl laptopMinWidth:p-20 fullHdMinWidth:text-4xl`}
         >
           <p>{props.subName}</p>
         </div>
         <div className="">
           <h3
-            className={`${poppinsFont.className} p-5 text-lg font-bold tabletMinWidth:text-2xl laptopMinWidth:text-4xl fullHdMinWidth:pl-20 fullHdMinWidth:text-5xl`}
+            className={`${poppinsFont.className} p-5 text-lg font-bold tabletMinWidth:text-2xl laptopMinWidth:text-4xl laptopMinWidth:pl-20 fullHdMinWidth:text-5xl`}
           >
             {props.name}
           </h3>
@@ -46,11 +46,11 @@ const CardQuotes = (props) => {
 
 const Home = () => {
   return (
-    <section className="relative w-screen bg-zinc-800">
+    <section className="relative w-screen bg-zinc-800 ">
       <div className="relative w-full h-full pt-40 tabletMinWidth:pt-52">
-        <div className="flex justify-between">
+        <div className="flex justify-between ">
           <div className=" flex-col justify-center flex-1 items-center text-white px-10 pt-10 pb-20 tabletMinWidth:pb-32">
-            <div class="text-7xl font-NewEleganceConsended leading-relaxed tabletMinWidth:text-9xl tabletMinWidth:leading-relaxed">
+            <div class="text-[4.5rem] font-NewEleganceConsended leading-relaxed tabletMinWidth:text-[7rem] tabletMinWidth:leading-relaxed fullHdMinWidth:text-[8rem]">
               <h1>
                 <span class="">Everything</span>
               </h1>
@@ -66,7 +66,7 @@ const Home = () => {
               <a href=""> Explore Content</a>
             </button>
           </div>
-          <div className="hidden relative w-screen h-[50rem] flex-1 laptopMinWidth:block">
+          <div className="hidden laptopMinWidth:relative laptopMinWidth:w-screen laptopMinWidth:h-[40rem] laptopMinWidth:flex-1 laptopMinWidth:block fullHdMinWidth:h-[50rem]">
             <Image
               src={homeBackground}
               alt="background"
@@ -74,30 +74,30 @@ const Home = () => {
               quality={100}
               fill
               sizes="100vw"
-              style={{ objectFit: "cover" }}
+              style={{ objectFit: 'cover' }}
             />
           </div>
         </div>
         <div className="relative flex bg-white py-5 laptopMinWidth:border-b laptopMinWidth:border-gray-900 laptopMinWidth:justify-center laptopMinWidth:items-center">
           <CardQuotes
-            subName={"We are not maker of history. We are made by History"}
-            name={"Martin Luther King. jr"}
+            subName={'We are not maker of history. We are made by History'}
+            name={'Martin Luther King. jr'}
           />
           <CardQuotes
-            subName={"Anybody can make history. Only a great man can write it"}
-            name={"Marcus Garvey"}
+            subName={'Anybody can make history. Only a great man can write it'}
+            name={'Marcus Garvey'}
           />
           <CardQuotes
             subName={
-              "Those that fall to learn from history,are doomed to repeat it"
+              'Those that fall to learn from history,are doomed to repeat it'
             }
-            name={"Winston Churchill"}
+            name={'Winston Churchill'}
           />
         </div>
 
         {/* backround home for tab and mobile responsive */}
 
-        <div className="relative w-screen h-[30rem] flex-1 laptopMinWidth:hidden">
+        <div className="relative w-full h-[30rem] flex-1 tabletMinWidth:h-[40rem] laptopMinWidth:hidden">
           <Image
             src={homeBackground}
             alt="background"
@@ -105,7 +105,7 @@ const Home = () => {
             quality={100}
             fill
             sizes="100vw"
-            style={{ objectFit: "cover" }}
+            style={{ objectFit: 'cover' }}
           />
         </div>
       </div>
