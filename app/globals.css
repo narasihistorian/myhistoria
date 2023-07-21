@@ -43,3 +43,13 @@
 body {
   overflow-x: hidden;
 }
+
+/* component style */
+
+.section-minscreen {
+  @apply relative w-screen min-h-screen;
+}
+
+.section-without-minscreen {
+  @apply relative w-screen min-h-screen;
+}

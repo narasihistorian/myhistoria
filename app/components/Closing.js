@@ -1,22 +1,16 @@
-import Image from 'next/image';
-import React from 'react';
+import Image from "next/image";
+import React from "react";
 
-import { Montserrat, Poppins } from 'next/font/google';
+import { Poppins } from "next/font/google";
 
-import closingBackground from '../../public/img/closingbackground.jpg';
+import closingBackground from "../../public/img/bg-closing.jpg";
 
 // font ---------------------------------------
 
-const montserratFont = Montserrat({
-  style: ['normal'],
-  subsets: ['latin'],
-  weight: ['400'],
-});
-
 const poppinsFont = Poppins({
-  style: ['normal'],
-  subsets: ['latin'],
-  weight: ['400'],
+  style: ["normal"],
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 // main component ---------------------------------------
@@ -36,15 +30,15 @@ const Closing = () => {
           </p>
         </div>
 
-        <div className="relative flex flex-col-reverse flex-1 w-full h-[30rem] laptopMinWidth:h-[40rem] fullHdMinWidth:h-[60rem]">
+        <div className="relative flex flex-col-reverse flex-1 w-full h-[30rem] tabletMinWidth:h-[40rem] laptopMinWidth:h-[50rem] fullHdMinWidth:h-[60rem]">
           <Image
             src={closingBackground}
             alt="closing background"
             quality={100}
             placeholder="blur"
             fill
-            sizes="100vw"
-            style={{ objectFit: 'cover' }}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            style={{ objectFit: "cover" }}
           />
           <div className="absolute w-screen min-h-[5vh] backdrop-grayscale-0 bg-white/10 z-10">
             <div className="absolute w-full h-full flex justify-center items-center text-white text-lg laptopMinWidth:text-2xl fullHdMinWidth:text-3xl">

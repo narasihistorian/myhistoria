@@ -1,25 +1,25 @@
-import Image from 'next/image';
-import React from 'react';
-import Link from 'next/link';
+import Image from "next/image";
+import React from "react";
+import Link from "next/link";
 
-import { Montserrat, Poppins } from 'next/font/google';
+import { Montserrat, Poppins } from "next/font/google";
 
-import napoleonwarBackground from '../../public/img/napoleonic-war.jpg';
-import ageOfDiscoverBackground from '../../public/img/age-of-discovery.jpg';
-import ancientRomeBackground from '../../public/img/ancient-rome.jpg';
+import napoleonwarBackground from "../../public/img/napoleonic-war.jpg";
+import ageOfDiscoverBackground from "../../public/img/age-of-discovery.jpg";
+import ancientRomeBackground from "../../public/img/ancient-rome.jpg";
 
 // font ---------------------------------------
 
 const montserratFont = Montserrat({
-  style: ['normal'],
-  subsets: ['latin'],
-  weight: ['400'],
+  style: ["normal"],
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 const poppinsFont = Poppins({
-  style: ['normal'],
-  subsets: ['latin'],
-  weight: ['400'],
+  style: ["normal"],
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 // main component ---------------------------------------
@@ -47,8 +47,8 @@ const Artikel = () => {
               className="transition-transform"
               src={napoleonwarBackground}
               fill
-              sizes="100vw"
-              style={{ objectFit: 'cover' }}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              style={{ objectFit: "cover" }}
             />
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70" />
             <div className="absolute text-white  inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[90%] group-hover:translate-y-0 transition-all duration-500">
@@ -57,7 +57,7 @@ const Artikel = () => {
               >
                 Napoleonic War
               </h1>
-              <p className="text-xs italic py-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 tabletMinWidth:text-lg fullHdMinWidth:text-2xl">
+              <p className="text-xs italic py-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 tabletMinWidth:text-lg fullHdMinWidth:text-3xl">
                 Peperangan yang melanda benua Eropa setelah revolusi Perancis
                 dan munculnya figur Napoleon Bonaparte seorang kaisar Perancis
                 yang melancarkan peperangan keseluruh Eropa
@@ -78,8 +78,8 @@ const Artikel = () => {
               className="transition-transform"
               src={ageOfDiscoverBackground}
               fill
-              sizes="100vw"
-              style={{ objectFit: 'cover' }}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              style={{ objectFit: "cover" }}
             />
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70" />
             <div className="absolute text-white  inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[90%] group-hover:translate-y-0 transition-all duration-500">
@@ -88,7 +88,7 @@ const Artikel = () => {
               >
                 Age of Discovery
               </h1>
-              <p className="text-xs italic py-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 tabletMinWidth:text-lg fullHdMinWidth:text-2xl">
+              <p className="text-xs italic py-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 tabletMinWidth:text-lg fullHdMinWidth:text-3xl">
                 Era dimulainya penjelajahan samudera yang diinisiasi oleh
                 Imperium Spanyol untuk mencari dunia baru dengan semangat
                 Gospel, Glory, dan Gold
@@ -109,8 +109,8 @@ const Artikel = () => {
               className="transition-transform"
               src={ancientRomeBackground}
               fill
-              sizes="100vw"
-              style={{ objectFit: 'cover' }}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              style={{ objectFit: "cover" }}
             />
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70" />
             <div className="absolute text-white  inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[90%] group-hover:translate-y-0 transition-all duration-500">
@@ -119,7 +119,7 @@ const Artikel = () => {
               >
                 Ancient Rome
               </h1>
-              <p className="text-xs italic py-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 tabletMinWidth:text-lg fullHdMinWidth:text-2xl">
+              <p className="text-xs italic py-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 tabletMinWidth:text-lg fullHdMinWidth:text-3xl">
                 Periode Roma yang paling dikenal dan sering dikutip oleh
                 sejarahwan, yaitu Roma era Republik karena menjadi dasar bagi
                 pilar peradaban atau dunia barat yang kita kenal sekarang ini

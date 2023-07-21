@@ -1,22 +1,22 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 
-import { Montserrat, Poppins } from 'next/font/google';
+import { Montserrat, Poppins } from "next/font/google";
 
-import homeBackground from '../../public/img/bg-1920.jpg';
+import homeBackground from "../../public/img/bg-1920.jpg";
 
 // font --------------------------------------------------
 
 const montserratFont = Montserrat({
-  style: ['normal'],
-  subsets: ['latin'],
-  weight: ['400'],
+  style: ["normal"],
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 const poppinsFont = Poppins({
-  style: ['normal'],
-  subsets: ['latin'],
-  weight: ['400'],
+  style: ["normal"],
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 // props --------------------------------------------------
@@ -26,7 +26,7 @@ const CardQuotes = (props) => {
     <>
       <div className="border-r border-gray-600">
         <div
-          className={`h-1/2 font-NelaSlabLight p-5 text-xs tabletMinWidth:text-lg laptopMinWidth:text-3xl laptopMinWidth:p-20 fullHdMinWidth:text-4xl`}
+          className={`h-1/2 ${montserratFont.className} p-5 text-xs tabletMinWidth:text-lg laptopMinWidth:text-2xl laptopMinWidth:p-20 fullHdMinWidth:text-4xl`}
         >
           <p>{props.subName}</p>
         </div>
@@ -50,18 +50,18 @@ const Home = () => {
       <div className="relative w-full h-full pt-40 tabletMinWidth:pt-52">
         <div className="flex justify-between ">
           <div className=" flex-col justify-center flex-1 items-center text-white px-10 pt-10 pb-20 tabletMinWidth:pb-32">
-            <div class="text-[4.5rem] font-NewEleganceConsended leading-relaxed tabletMinWidth:text-[7rem] tabletMinWidth:leading-relaxed fullHdMinWidth:text-[8rem]">
+            <div className="text-[4.5rem] font-NewEleganceConsended leading-relaxed tabletMinWidth:text-[7rem] tabletMinWidth:leading-relaxed fullHdMinWidth:text-[8rem]">
               <h1>
-                <span class="">Everything</span>
+                <span className="">Everything</span>
               </h1>
               <h1>
-                <span class="">
+                <span className="">
                   About <span className="text-[#fedf16e0]">History</span>
                 </span>
               </h1>
             </div>
             <button
-              class={`${montserratFont.className} text-2xl py-3 px-10 mt-10 border-solid border-2 border-indigo-100 rounded-[5rem] tabletMinWidth:text-4xl`}
+              className={`${montserratFont.className} text-2xl py-3 px-10 mt-10 border-solid border-2 border-indigo-100 rounded-[5rem] tabletMinWidth:text-4xl`}
             >
               <a href=""> Explore Content</a>
             </button>
@@ -73,25 +73,25 @@ const Home = () => {
               placeholder="blur"
               quality={100}
               fill
-              sizes="100vw"
-              style={{ objectFit: 'cover' }}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              style={{ objectFit: "cover" }}
             />
           </div>
         </div>
         <div className="relative flex bg-white py-5 laptopMinWidth:border-b laptopMinWidth:border-gray-900 laptopMinWidth:justify-center laptopMinWidth:items-center">
           <CardQuotes
-            subName={'We are not maker of history. We are made by History'}
-            name={'Martin Luther King. jr'}
+            subName={"We are not maker of history. We are made by History"}
+            name={"Martin Luther King. jr"}
           />
           <CardQuotes
-            subName={'Anybody can make history. Only a great man can write it'}
-            name={'Marcus Garvey'}
+            subName={"Anybody can make history. Only a great man can write it"}
+            name={"Marcus Garvey"}
           />
           <CardQuotes
             subName={
-              'Those that fall to learn from history,are doomed to repeat it'
+              "Those that fall to learn from history,are doomed to repeat it"
             }
-            name={'Winston Churchill'}
+            name={"Winston Churchill"}
           />
         </div>
 
@@ -104,8 +104,8 @@ const Home = () => {
             placeholder="blur"
             quality={100}
             fill
-            sizes="100vw"
-            style={{ objectFit: 'cover' }}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            style={{ objectFit: "cover" }}
           />
         </div>
       </div>
