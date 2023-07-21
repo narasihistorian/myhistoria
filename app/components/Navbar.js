@@ -6,8 +6,6 @@ import { Montserrat } from "next/font/google";
 
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
-import logoHome from "../../public/img/logo png narasihistorian.png";
-
 const montserratFont = Montserrat({
   style: ["normal"],
   subsets: ["latin"],
@@ -26,17 +24,13 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`${montserratFont.className} fixed flex justify-between items-center w-screen min-h-[5vh] z-10 px-5 py-5 tabletMinWidth:px-10 `}
+        className={`${montserratFont.className} fixed flex justify-between items-center w-screen min-h-[10vh] z-10 px-10 py-5`}
       >
-        <div className="block relative w-[30rem] h-[10rem]">
+        <div className="relative text-white text-2xl uppercase tabletMinWidth:text-3xl">
           <Link rel="preload" href="/">
-            <Image
-              src={logoHome}
-              alt="background"
-              placeholder="blur"
-              quality={100}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            />
+            <h1>
+              Narasi<span className="text-[#fedf16e0]">Historian</span>
+            </h1>
           </Link>
         </div>
 
