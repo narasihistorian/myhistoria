@@ -62,7 +62,7 @@ const Artikel = () => {
                 dan munculnya figur Napoleon Bonaparte seorang kaisar Perancis
                 yang melancarkan peperangan keseluruh Eropa
               </p>
-              <Link rel="preload" href="/kategori" target="_blank" as="style">
+              <Link rel="preload" href="/kategori" target="_blank">
                 <button className="rounded-full shadow shadow-black/60 bg-transparent py-2 px-10 text-sm capitalize laptopMinWidth:text-base desktopMinWidth:text-2xl">
                   Explore
                 </button>
@@ -93,7 +93,7 @@ const Artikel = () => {
                 Imperium Spanyol untuk mencari dunia baru dengan semangat
                 Gospel, Glory, dan Gold
               </p>
-              <Link rel="preload" href="/kategori" target="_blank" as="style">
+              <Link rel="preload" href="/kategori" target="_blank">
                 <button className="rounded-full shadow shadow-black/60 bg-transparent py-2 px-10 text-sm capitalize laptopMinWidth:text-base desktopMinWidth:text-2xl">
                   Explore
                 </button>
@@ -124,7 +124,7 @@ const Artikel = () => {
                 sejarahwan, yaitu Roma era Republik karena menjadi dasar bagi
                 pilar peradaban atau dunia barat yang kita kenal sekarang ini
               </p>
-              <Link rel="preload" href="/kategori" target="_blank" as="style">
+              <Link rel="preload" href="/kategori" target="_blank">
                 <button className="rounded-full shadow shadow-black/60 bg-transparent py-2 px-10 text-sm capitalize laptopMinWidth:text-base desktopMinWidth:text-2xl">
                   Explore
                 </button>

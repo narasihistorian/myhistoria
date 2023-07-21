@@ -28,7 +28,7 @@ const Navbar = () => {
       <nav
         className={`${montserratFont.className} fixed flex justify-between items-center w-screen min-h-[5vh] z-10 px-5 py-5 tabletMinWidth:px-10 `}
       >
-        <div className="relative w-[30rem] h-[10rem]">
+        <div className="block relative w-[30rem] h-[10rem]">
           <Link rel="preload" href="/">
             <Image
               src={logoHome}
