@@ -1,13 +1,19 @@
 import Image from "next/image";
 import React from "react";
 
-import { Poppins } from "next/font/google";
+import { Montserrat, Poppins } from "next/font/google";
 
 import closingBackground from "../../public/img/bg-closing.jpg";
 
 // font ---------------------------------------
 
 const poppinsFont = Poppins({
+  style: ["normal"],
+  subsets: ["latin"],
+  weight: ["400"],
+});
+
+const montserratFont = Montserrat({
   style: ["normal"],
   subsets: ["latin"],
   weight: ["400"],
@@ -20,11 +26,11 @@ const Closing = () => {
     <section className="relative w-screen">
       <div className="relative w-full h-full pt-10">
         <div className="flex flex-1 flex-col justify-center items-center p-10">
-          <h1 className="text-[4rem] font-NewEleganceCondita leading-relaxed tabletMinWidth:text-[6rem]">
+          <h1 className="text-6xl font-MonaSansUltraLight tabletMinWidth:text-8xl fullHdMinWidth:text-9xl">
             Follow Us
           </h1>
           <p
-            className={`${poppinsFont.className} text-lg text-center py-5 px-10 tabletMinWidth:text-2xl laptopMinWidth:text-3xl`}
+            className={`${montserratFont.className} text-base text-center py-3 px-20 border-b border-gray-900 tabletMinWidth:py-5 tabletMinWidth:text-2xl laptopMinWidth:text-3xl laptopMinWidth:py-10 fullHdMinWidth:text-4xl`}
           >
             Ikuti Terus Perkembangan NarasiHistorian <i>(coming soon)</i>
           </p>

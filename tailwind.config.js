@@ -18,6 +18,8 @@ module.exports = {
         NelaSlabLight: ["NelaSlabLight"],
         NewEleganceCondita: ["NewEleganceCondltaFont"],
         NewEleganceConsended: ["NewEleganceCondensedFont"],
+        MonaSansUltraLightWide: ["MonaSansUltraLightWide"],
+        MonaSansUltraLight: ["MonaSansUltraLight"],
       },
     },
   },

@@ -29,11 +29,11 @@ const Artikel = () => {
     <section className="relative w-screen">
       <div className="relative w-full h-full px-10 py-20 laptopMinWidth:py-32">
         <div className="flex flex-col flex-1 justify-center items-center">
-          <h1 className="text-5xl font-NewEleganceCondita tabletMinWidth:text-7xl fullHdMinWidth:text-8xl">
+          <h1 className="text-6xl font-MonaSansUltraLight tabletMinWidth:text-8xl fullHdMinWidth:text-9xl">
             Lets Find Out
           </h1>
           <p
-            className={`${montserratFont.className} text-lg py-10 tabletMinWidth:text-2xl laptopMinWidth:text-3xl fullHdMinWidth:text-4xl fullHdMinWidth:py-20`}
+            className={`${montserratFont.className} text-base border-b border-gray-900 py-3 tabletMinWidth:py-5 tabletMinWidth:text-2xl laptopMinWidth:py-10 laptopMinWidth:text-3xl fullHdMinWidth:text-4xl`}
           >
             Temukan Artikel Favoritmu
           </p>

@@ -50,7 +50,7 @@ const Home = () => {
       <div className="relative w-full h-full pt-40 tabletMinWidth:pt-52">
         <div className="flex justify-between ">
           <div className=" flex-col justify-center flex-1 items-center text-white px-10 pt-10 pb-20 tabletMinWidth:pb-32">
-            <div className="text-[4.5rem] font-NewEleganceConsended leading-relaxed tabletMinWidth:text-[7rem] tabletMinWidth:leading-relaxed fullHdMinWidth:text-[8rem]">
+            <div className="text-[4.5rem] font-MonaSansUltraLightWide leading-relaxed tabletMinWidth:text-[7rem] tabletMinWidth:leading-relaxed fullHdMinWidth:text-[9rem]">
               <h1>
                 <span className="">Everything</span>
               </h1>
@@ -63,7 +63,7 @@ const Home = () => {
             <button
               className={`${montserratFont.className} text-2xl py-3 px-10 mt-10 border-solid border-2 border-indigo-100 rounded-[5rem] tabletMinWidth:text-4xl`}
             >
-              <a href=""> Explore Content</a>
+              <a href=""> Explore Konten</a>
             </button>
           </div>
           <div className="hidden laptopMinWidth:relative laptopMinWidth:w-screen laptopMinWidth:h-[40rem] laptopMinWidth:flex-1 laptopMinWidth:block fullHdMinWidth:h-[50rem]">

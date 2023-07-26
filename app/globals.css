@@ -14,17 +14,28 @@
   src: url("../font/TheNewElegance-Regular.otf") format("opentype");
 }
 
+@font-face {
+  font-family: "MonaSansUltraLightWide";
+  src: url("../font/Mona-Sans.woff2") format("woff2 supports variations"),
+    url("../font/Mona-Sans.woff2") format("woff2-variations");
+  font-weight: 200;
+  font-stretch: 125%;
+}
+
+@font-face {
+  font-family: "MonaSansUltraLight";
+  src: url("../font/Mona-Sans.woff2") format("woff2 supports variations"),
+    url("../font/Mona-Sans.woff2") format("woff2-variations");
+  font-weight: 200;
+  font-stretch: 100%;
+}
+
 :root {
   font-size: 62.5%;
   scroll-behavior: smooth;
   overflow-x: hidden;
 
   /* color */
-
-  /* font family */
-
-  --newEleganceCondltaFont: "NewEleganceCondltaFont";
-  --newEleganceCondensed: "NewEleganceCondensedFont";
 
   /* font size */
 
