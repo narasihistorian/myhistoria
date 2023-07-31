@@ -5,8 +5,8 @@ import Link from "next/link";
 import { Montserrat, Poppins } from "next/font/google";
 
 import infografisBackground from "../../public/img/infografis.jpg";
-import kategoriBackground from "../../public/img/kategori.jpg";
-import videoBackground from "../../public/img/video new.jpg";
+import kategoriBackground from "../../public/img/kategori-cover.jpg";
+import videoBackground from "../../public/img/video-cover-1.jpg";
 
 // font ---------------------------------------
 
