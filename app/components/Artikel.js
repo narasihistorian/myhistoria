@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Montserrat, Poppins } from "next/font/google";
 
 import infografisBackground from "../../public/img/infografis.jpg";
-import kategoriBackground from "../../public/img/kategori new.jpg";
+import kategoriBackground from "../../public/img/kategori.jpg";
 import videoBackground from "../../public/img/video new.jpg";
 
 // font ---------------------------------------
@@ -81,7 +81,7 @@ const Artikel = () => {
 
           <div className="group relative w-full h-[30rem] col-span-3 laptopMinWidth:col-span-2 fullHdMinWidth:h-[60rem]">
             <Image
-              alt="abad penjelajahan"
+              alt="kategori"
               className="transition-transform"
               src={kategoriBackground}
               fill
@@ -114,7 +114,7 @@ const Artikel = () => {
 
           <div className="group relative w-full h-[30rem] col-span-3 laptopMinWidth:col-span-3 fullHdMinWidth:h-[60rem]">
             <Image
-              alt="roma"
+              alt="video"
               className="transition-transform"
               src={videoBackground}
               fill
