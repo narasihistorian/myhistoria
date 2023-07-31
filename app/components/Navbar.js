@@ -46,7 +46,11 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link rel="preload" href="/videografis">
+            <Link
+              rel="preload"
+              target="_blank"
+              href="https://www.youtube.com/channel/UCNoUf4xYawhvK6dD94oDEDg"
+            >
               Video
             </Link>
           </li>
@@ -56,7 +60,7 @@ const Navbar = () => {
 
         <div
           onClick={handleNav}
-          className="text-white block tabletMinWidth:hidden"
+          className="text-white z-10 block tabletMinWidth:hidden"
         >
           {!nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
         </div>
@@ -64,13 +68,15 @@ const Navbar = () => {
         <div
           className={
             !nav
-              ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-gray-100 ease-in-out duration-500 "
+              ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-zinc-800 ease-in-out duration-500 z-20 "
               : "fixed left-[-100%]"
           }
         >
-          <h1 className="text-logoNavbar p-5 uppercase">Narasihistorian</h1>
+          <h1 className="text-2xl text-white p-5 uppercase">
+            Narasi<span className="text-[#fedf16e0]">historian</span>
+          </h1>
 
-          <ul className="text-lg p-4 uppercase">
+          <ul className="text-lg text-white p-4 uppercase">
             <li className="p-5 border-b border-gray-600">
               <Link rel="preload" href="/infografis">
                 Infografis
@@ -82,12 +88,23 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="p-5">
-              <Link rel="preload" href="/videografis">
+              <Link
+                rel="preload"
+                target="_blank"
+                href="https://www.youtube.com/channel/UCNoUf4xYawhvK6dD94oDEDg"
+              >
                 Video
               </Link>
             </li>
           </ul>
         </div>
+        <div
+          className={
+            !nav
+              ? "fixed left-0 top-0 w-screen h-screen backdrop-blur-sm bg-white/30 ease-in-out duration-500 "
+              : "fixed"
+          }
+        ></div>
       </nav>
     </>
   );

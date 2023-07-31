@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import { Montserrat, Poppins } from "next/font/google";
 
-import homeBackground from "../../public/img/bg-1920.jpg";
+import homeBackground from "../../public/img/bg-closing.jpg";
 
 // font --------------------------------------------------
 
@@ -61,7 +61,7 @@ const Home = () => {
               </h1>
             </div>
             <button
-              className={`${montserratFont.className} text-2xl py-3 px-10 mt-10 border-solid border-2 border-indigo-100 rounded-[5rem] tabletMinWidth:text-4xl`}
+              className={`${montserratFont.className} text-2xl py-5 px-10 mt-10 border-solid border-2 border-indigo-100 rounded-[5rem] tabletMinWidth:text-4xl`}
             >
               <a href=""> Explore Konten</a>
             </button>

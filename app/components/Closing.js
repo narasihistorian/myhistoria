@@ -3,7 +3,7 @@ import React from "react";
 
 import { Montserrat, Poppins } from "next/font/google";
 
-import closingBackground from "../../public/img/bg-closing.jpg";
+import closingBackground from "../../public/img/bg-1920.jpg";
 
 // font ---------------------------------------
 
@@ -26,11 +26,11 @@ const Closing = () => {
     <section className="relative w-screen">
       <div className="relative w-full h-full pt-10">
         <div className="flex flex-1 flex-col justify-center items-center p-10">
-          <h1 className="text-6xl font-MonaSansUltraLight tabletMinWidth:text-8xl fullHdMinWidth:text-9xl">
+          <h1 className="text-6xl font-MonaSansUltraLight tabletMinWidth:text-7xl fullHdMinWidth:text-8xl">
             Follow Us
           </h1>
           <p
-            className={`${montserratFont.className} text-base text-center py-3 px-20 border-b border-gray-900 tabletMinWidth:py-5 tabletMinWidth:text-2xl laptopMinWidth:text-3xl laptopMinWidth:py-10 fullHdMinWidth:text-4xl`}
+            className={`${montserratFont.className} text-base text-center py-3 px-20 border-b border-gray-900 tabletMinWidth:py-5 tabletMinWidth:text-2xl laptopMinWidth:py-10 fullHdMinWidth:text-3xl`}
           >
             Ikuti Terus Perkembangan NarasiHistorian <i>(coming soon)</i>
           </p>
