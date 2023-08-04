@@ -32,7 +32,7 @@ const poppinsFont = Poppins({
 
 const Artikel = () => {
   return (
-    <section className="relative w-screen">
+    <section id="artikel" className="relative w-screen">
       <div className="relative w-full h-full px-10 py-20 laptopMinWidth:py-32">
         <div className="flex flex-col flex-1 justify-center items-center">
           <h1 className="text-6xl font-MonaSansUltraLight tabletMinWidth:text-7xl fullHdMinWidth:text-8xl">
@@ -44,7 +44,7 @@ const Artikel = () => {
             Temukan Artikel Favoritmu
           </p>
         </div>
-        <div className="relative overflow-hidden grid grid-cols-3 grid-rows-2 grid-flow-row gap-4 flex-1 py-10 fullHdMinWidth:grid-cols-3">
+        <div className="relative overflow-hidden grid grid-cols-3 grid-rows-2 grid-flow-row gap-4 flex-1 py-10 fullHdMinWidth:grid-rows-1">
           {/* infografi --------------------------------------------------------- */}
 
           <div className="group relative w-full h-[30rem] col-span-3 laptopMinWidth:col-span-1 fullHdMinWidth:h-[60rem]">
@@ -79,7 +79,7 @@ const Artikel = () => {
 
           {/* kateogri --------------------------------------------------------- */}
 
-          <div className="group relative w-full h-[30rem] col-span-3 laptopMinWidth:col-span-2 fullHdMinWidth:h-[60rem]">
+          <div className="group relative w-full h-[30rem] col-span-3 laptopMinWidth:col-span-2 fullHdMinWidth:col-span-1 fullHdMinWidth:h-[60rem]">
             <Image
               alt="kategori"
               className="transition-transform"
@@ -112,7 +112,7 @@ const Artikel = () => {
 
           {/* video --------------------------------------------------------- */}
 
-          <div className="group relative w-full h-[30rem] col-span-3 laptopMinWidth:col-span-3 fullHdMinWidth:h-[60rem]">
+          <div className="group relative w-full h-[30rem] col-span-3 laptopMinWidth:col-span-3 fullHdMinWidth:col-span-1 fullHdMinWidth:h-[60rem]">
             <Image
               alt="video"
               className="transition-transform"

@@ -1,11 +1,18 @@
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 
-import { Montserrat, Poppins } from "next/font/google";
+import closingBackground from "../../public/img/closing cover nwe.jpg";
 
-import closingBackground from "../../public/img/bg-1920.jpg";
+import {
+  AiOutlineMail,
+  AiOutlineInstagram,
+  AiOutlineYoutube,
+} from "react-icons/ai";
 
 // font ---------------------------------------
+
+import { Montserrat, Poppins } from "next/font/google";
 
 const poppinsFont = Poppins({
   style: ["normal"],
@@ -23,32 +30,79 @@ const montserratFont = Montserrat({
 
 const Closing = () => {
   return (
-    <section className="relative w-screen">
-      <div className="relative w-full h-full pt-10">
-        <div className="flex flex-1 flex-col justify-center items-center p-10">
-          <h1 className="text-6xl font-MonaSansUltraLight tabletMinWidth:text-7xl fullHdMinWidth:text-8xl">
-            Follow Us
-          </h1>
-          <p
-            className={`${montserratFont.className} text-base text-center py-3 px-20 border-b border-gray-900 tabletMinWidth:py-5 tabletMinWidth:text-2xl laptopMinWidth:py-10 fullHdMinWidth:text-3xl`}
-          >
-            Ikuti Terus Perkembangan NarasiHistorian <i>(coming soon)</i>
-          </p>
-        </div>
-
-        <div className="relative flex flex-col-reverse flex-1 w-full h-[30rem] tabletMinWidth:h-[40rem] laptopMinWidth:h-[50rem] fullHdMinWidth:h-[60rem]">
-          <Image
-            src={closingBackground}
-            alt="closing background"
-            quality={100}
-            placeholder="blur"
-            fill
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            style={{ objectFit: "cover" }}
-          />
-          <div className="absolute w-screen min-h-[5vh] backdrop-grayscale-0 bg-white/10 z-10">
-            <div className="absolute w-full h-full flex justify-center items-center text-white text-lg laptopMinWidth:text-2xl fullHdMinWidth:text-3xl">
-              <p className="">2023 NarasiHistorian || All right reserved</p>
+    <section className="relative w-screen bg-zinc-800">
+      <div className="relative w-full h-full">
+        <div className="relative overflow-hidden flex flex-col laptopMinWidth:flex-row">
+          <div className="relative w-full h-[20rem] tabletMinWidth:h-[30rem] laptopMinWidth:w-[60rem] laptopMinWidth:h-[40rem] fullHdMinWidth:w-[90rem] fullHdMinWidth:h-[50rem]">
+            <Image
+              src={closingBackground}
+              alt="closing background"
+              quality={100}
+              placeholder="blur"
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              style={{ objectFit: "cover" }}
+            />
+          </div>
+          <div className="relative flex-1 flex flex-col justify-center items-start px-10 py-10 text-white bg-zinc-800 tabletMinWidth:pt-20 laptopMinWidth:px-32 ">
+            <h6
+              className={`${montserratFont.className} text-2xl tabletMinWidth:text-5xl laptopMinWidth:text-6xl`}
+            >
+              Tentang Narasi
+              <span className="text-[#fedf16e0]">Historian</span>
+            </h6>
+            <p
+              className={`${poppinsFont.className} text-sm pt-5 tabletMinWidth:text-2xl tabletMinWidth:pt-10 fullHdMinWidth:text-2xl`}
+            >
+              Narasihistorian merupakan media konten yang berfokus pada sejarah
+              peradaban global dengan visualisasi yang simple dan interaktif,
+              berupa konten artikel ataupun video infografik.{" "}
+            </p>
+            <div className="flex tabletMinWidth:hidden">
+              <div className="py-5 pr-5">
+                <Link href="mailto:agungrosyandi@gmail.com">
+                  <AiOutlineMail size={20} />
+                </Link>
+              </div>
+              <div className="py-5 pr-5">
+                <Link
+                  href="https://www.instagram.com/narasihistorian/"
+                  target="_blank"
+                >
+                  <AiOutlineInstagram size={20} />
+                </Link>
+              </div>
+              <div className="py-5 ">
+                <Link
+                  href="https://www.youtube.com/channel/UCNoUf4xYawhvK6dD94oDEDg"
+                  target="_blank"
+                >
+                  <AiOutlineYoutube size={20} />
+                </Link>
+              </div>
+            </div>
+            <div className="hidden tabletMinWidth:flex tabletMinWidth:py-5 ">
+              <div className="py-5 pr-5">
+                <Link href="mailto:narasihistorian@gmail.com">
+                  <AiOutlineMail size={35} />
+                </Link>
+              </div>
+              <div className="py-5 pr-5">
+                <Link
+                  href="https://www.instagram.com/narasihistorian/"
+                  target="_blank"
+                >
+                  <AiOutlineInstagram size={35} />
+                </Link>
+              </div>
+              <div className="py-5 ">
+                <Link
+                  href="https://www.youtube.com/channel/UCNoUf4xYawhvK6dD94oDEDg"
+                  target="_blank"
+                >
+                  <AiOutlineYoutube size={35} />
+                </Link>
+              </div>
             </div>
           </div>
         </div>

@@ -2,12 +2,16 @@
 
 import NavbarSections from "../components/Navbar";
 import InfografisSections from "./Infografis";
+import FooterSections from "../components/Footer";
 
 export default function Infografis() {
   return (
-    <main>
+    <>
       <NavbarSections />
-      <InfografisSections />
-    </main>
+      <main>
+        <InfografisSections />
+      </main>
+      <FooterSections />
+    </>
   );
 }

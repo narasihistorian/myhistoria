@@ -26,7 +26,7 @@ const Navbar = () => {
       <nav
         className={`${montserratFont.className} fixed flex justify-between items-center w-screen min-h-[10vh] z-10 px-10 py-5`}
       >
-        <div className="relative text-white text-2xl uppercase tabletMinWidth:text-3xl">
+        <div className="relative z-10 text-white text-2xl uppercase tabletMinWidth:text-3xl">
           <Link rel="preload" href="/">
             <h1>
               Narasi<span className="text-[#fedf16e0]">Historian</span>
@@ -34,27 +34,31 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <ul className="text-white items-center text-lg py-5 hidden tabletMinWidth:flex tabletMinWidth:border-b tabletMinWidth:border-gray-100 tabletMinWidth:text-3xl">
-          <li className="pr-5">
-            <Link rel="preload" href="/infografis">
-              Infografis
-            </Link>
-          </li>
-          <li className="pr-5">
-            <Link rel="preload" href="/kategori">
-              Kategori
-            </Link>
-          </li>
-          <li>
-            <Link
-              rel="preload"
-              target="_blank"
-              href="https://www.youtube.com/channel/UCNoUf4xYawhvK6dD94oDEDg"
-            >
-              Video
-            </Link>
-          </li>
-        </ul>
+        <div>
+          <ul className=" text-white items-center text-lg py-5 hidden tabletMinWidth:flex tabletMinWidth:text-3xl">
+            <li className="pr-5 z-10">
+              <Link rel="preload" href="/infografis">
+                Infografis
+              </Link>
+            </li>
+            <li className="pr-5 z-10">
+              <Link rel="preload" href="/kategori">
+                Kategori
+              </Link>
+            </li>
+            <li className="z-10">
+              <Link
+                rel="preload"
+                target="_blank"
+                href="https://www.youtube.com/channel/UCNoUf4xYawhvK6dD94oDEDg"
+              >
+                Video
+              </Link>
+            </li>
+          </ul>
+
+          <div className="tabletMinWidth:absolute tabletMinWidth:left-0 tabletMinWidth:top-0 tabletMinWidth:backdrop-opacity-10 tabletMinWidth:backdrop-invert tabletMinWidth:bg-black/30 tabletMinWidth:w-full tabletMinWidth:h-full"></div>
+        </div>
 
         {/* burger menu ------------------------------------------------- */}
 

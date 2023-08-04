@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import { Montserrat, Poppins } from "next/font/google";
 
@@ -46,7 +47,7 @@ const CardQuotes = (props) => {
 
 const Home = () => {
   return (
-    <section className="relative w-screen bg-zinc-800 ">
+    <section className="relative w-screen bg-zinc-800">
       <div className="relative w-full h-full pt-40 tabletMinWidth:pt-52">
         <div className="flex justify-between ">
           <div className=" flex-col justify-center flex-1 items-center text-white px-10 pt-10 pb-20 tabletMinWidth:pb-32">
@@ -63,7 +64,7 @@ const Home = () => {
             <button
               className={`${montserratFont.className} text-2xl py-5 px-10 mt-10 border-solid border-2 border-indigo-100 rounded-[5rem] tabletMinWidth:text-4xl`}
             >
-              <a href=""> Explore Konten</a>
+              <Link href="#artikel">Explore Konten</Link>
             </button>
           </div>
           <div className="hidden laptopMinWidth:relative laptopMinWidth:w-screen laptopMinWidth:h-[40rem] laptopMinWidth:flex-1 laptopMinWidth:block fullHdMinWidth:h-[50rem]">

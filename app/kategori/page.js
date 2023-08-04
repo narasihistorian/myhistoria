@@ -2,12 +2,16 @@
 
 import NavbarSections from "../components/Navbar";
 import KategoriSections from "./Kategori";
+import FooterSections from "../components/Footer";
 
 export default function Kategori() {
   return (
-    <main>
+    <>
       <NavbarSections />
-      <KategoriSections />
-    </main>
+      <main>
+        <KategoriSections />
+      </main>
+      <FooterSections />
+    </>
   );
 }
