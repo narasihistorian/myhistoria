@@ -6,7 +6,7 @@ import { Montserrat } from "next/font/google";
 
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
-import LogoNavbar from "../../public/img/logo narasihistorian-02.png";
+import LogoNavbar from "../../public/img/logo png putih.png";
 
 const montserratFont = Montserrat({
   style: ["normal"],
