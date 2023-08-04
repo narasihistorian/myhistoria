@@ -64,7 +64,7 @@ const Home = () => {
             <button
               className={`${montserratFont.className} text-lg py-5 px-10 mt-10 border-solid border border-indigo-100 rounded-[5rem] tabletMinWidth:text-3xl`}
             >
-              <Link href="/#artikel">Explore Konten</Link>
+              <Link href="/kategori">Explore Konten</Link>
             </button>
           </div>
           <div className="hidden laptopMinWidth:relative laptopMinWidth:w-screen laptopMinWidth:h-[40rem] laptopMinWidth:flex-1 laptopMinWidth:block fullHdMinWidth:h-[50rem]">
