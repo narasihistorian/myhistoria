@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 
-import closingBackground from "../../public/img/closing cover nwe.jpg";
+import closingBackground from "../../public/img/closng-background-cover.jpg";
 
 import {
   AiOutlineMail,
@@ -33,7 +33,7 @@ const Closing = () => {
     <section className="relative w-screen bg-zinc-800">
       <div className="relative w-full h-full">
         <div className="relative overflow-hidden flex flex-col laptopMinWidth:flex-row">
-          <div className="relative w-full h-[20rem] tabletMinWidth:h-[30rem] laptopMinWidth:w-[60rem] laptopMinWidth:h-[40rem] fullHdMinWidth:w-[90rem] fullHdMinWidth:h-[50rem]">
+          <div className="relative w-full h-[20rem] tabletMinWidth:h-[30rem] laptopMinWidth:w-[60rem] laptopMinWidth:h-[40rem] fullHdMinWidth:w-[90rem] fullHdMinWidth:h-[55rem]">
             <Image
               src={closingBackground}
               alt="closing background"

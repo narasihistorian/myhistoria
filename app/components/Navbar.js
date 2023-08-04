@@ -6,6 +6,8 @@ import { Montserrat } from "next/font/google";
 
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
+import LogoNavbar from "../../public/img/logo narasihistorian-02.png";
+
 const montserratFont = Montserrat({
   style: ["normal"],
   subsets: ["latin"],
@@ -26,11 +28,18 @@ const Navbar = () => {
       <nav
         className={`${montserratFont.className} fixed flex justify-between items-center w-screen min-h-[10vh] z-10 px-10 py-5`}
       >
-        <div className="relative z-10 text-white text-2xl uppercase tabletMinWidth:text-3xl">
+        <div className="relative z-10 w-[25rem] h-[7rem] text-white text-2xl uppercase tabletMinWidth:w-[30rem] tabletMinWidth:text-3xl">
           <Link rel="preload" href="/">
-            <h1>
+            <Image
+              alt="logo navbar"
+              src={LogoNavbar}
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              style={{ objectFit: "cover" }}
+            />
+            {/* <h1>
               Narasi<span className="text-[#fedf16e0]">Historian</span>
-            </h1>
+            </h1> */}
           </Link>
         </div>
 
@@ -57,7 +66,7 @@ const Navbar = () => {
             </li>
           </ul>
 
-          <div className="tabletMinWidth:absolute tabletMinWidth:left-0 tabletMinWidth:top-0 tabletMinWidth:backdrop-opacity-10 tabletMinWidth:backdrop-invert tabletMinWidth:bg-black/30 tabletMinWidth:w-full tabletMinWidth:h-full"></div>
+          <div className="absolute left-0 top-0 backdrop-opacity-10 backdrop-invert bg-black/30 w-full h-full"></div>
         </div>
 
         {/* burger menu ------------------------------------------------- */}
