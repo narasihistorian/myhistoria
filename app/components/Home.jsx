@@ -4,7 +4,7 @@ import Link from "next/link";
 import CardQuotes from "../lib/CardQuotes";
 
 import { montserratFont } from "../lib/FontGoogle";
-import homeBackground from "../../public/img/bg-closing.jpg";
+import homeBackground from "../../public/img/new-bg-1.jpg";
 
 // main component --------------------------------------------------
 
