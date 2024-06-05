@@ -1,17 +1,17 @@
-import Image from 'next/image';
-import { useState } from 'react';
-import Link from 'next/link';
+import Image from "next/image";
+import { useState } from "react";
+import Link from "next/link";
 
-import { Montserrat } from 'next/font/google';
+import { Montserrat } from "next/font/google";
 
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
-import LogoNavbar from '../../public/img/logo-narasihistorian-1-02-1.png';
+import LogoNavbar from "../../public/img/logo-narasihistorian-1-02-1.png";
 
 const montserratFont = Montserrat({
-  style: ['normal'],
-  subsets: ['latin'],
-  weight: ['400'],
+  style: ["normal"],
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 // main logic --------------------------------------------------
@@ -26,23 +26,19 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`${montserratFont.className} fixed flex justify-between items-center w-screen min-h-[10vh] z-10 px-10 py-5`}
+        className={`${montserratFont.className} fixed flex justify-between items-center w-screen min-h-[10vh] z-10 px-10 py-5 laptopMinWidth:pr-14`}
       >
         <div className="relative z-10 text-white text-2xl uppercase tabletMinWidth:text-3xl">
           <Link rel="preload" href="/">
-            <div className="relative  w-[25rem] h-[7rem] tabletMinWidth:w-[30rem]">
+            <div className="relative  w-[17rem] h-[7rem] tabletMinWidth:w-[25rem]">
               <Image
                 alt="logo navbar"
                 src={LogoNavbar}
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                style={{ objectFit: 'cover' }}
+                style={{ objectFit: "cover" }}
               />
             </div>
-
-            {/* <h1>
-              Narasi<span className="text-[#fedf16e0]">Historian</span>
-            </h1> */}
           </Link>
         </div>
 
@@ -84,8 +80,8 @@ const Navbar = () => {
         <div
           className={
             !nav
-              ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-zinc-800 ease-in-out duration-500 z-20 '
-              : 'fixed left-[-100%]'
+              ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-zinc-800 ease-in-out duration-500 z-20 "
+              : "fixed left-[-100%]"
           }
         >
           <h1 className="text-2xl text-white p-5 uppercase">
@@ -117,8 +113,8 @@ const Navbar = () => {
         <div
           className={
             !nav
-              ? 'fixed left-0 top-0 w-screen h-screen backdrop-blur-sm bg-white/30 ease-in-out duration-500 '
-              : 'fixed'
+              ? "fixed left-0 top-0 w-screen h-screen backdrop-blur-sm bg-white/30 ease-in-out duration-500 "
+              : "fixed"
           }
         ></div>
       </nav>

@@ -15,7 +15,7 @@ module.exports = {
 
     extend: {
       fontFamily: {
-        NelaSlabLight: ["NelaSlabLight"],
+        DrukBoldTrial: ["DrukBoldTrial"],
         NewEleganceCondita: ["NewEleganceCondltaFont"],
         NewEleganceConsended: ["NewEleganceCondensedFont"],
         MonaSansUltraLightWide: ["MonaSansUltraLightWide"],

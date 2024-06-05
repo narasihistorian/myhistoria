@@ -30,6 +30,11 @@
   font-stretch: 100%;
 }
 
+@font-face {
+  font-family: "DrukBoldTrial";
+  src: url("../font/Druk-Bold-Trial.otf") format("truetype");
+}
+
 :root {
   font-size: 62.5%;
   scroll-behavior: smooth;
