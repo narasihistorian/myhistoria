@@ -11,8 +11,8 @@ import homeBackground from "../../public/img/bg home.jpg";
 const Home = () => {
   return (
     <section className="relative w-screen bg-zinc-800">
-      <div className="relative w-full h-full pt-40 tabletMinWidth:pt-52 desktopMinWidth:pt-0">
-        <div className="flex justify-between ">
+      <div className="relative w-full h-full">
+        <div className="relative flex justify-between pt-40 tabletMinWidth:pt-52 desktopMinWidth:pt-0 ">
           <div className="z-[2] flex-col justify-center flex-1 items-center text-white px-10 pt-10 pb-20 tabletMinWidth:pb-32 desktopMinWidth:pt-60">
             <div className="font-DrukBoldTrial uppercase text-[5rem] leading-[6rem] tabletMinWidth:text-[9rem] tabletMinWidth:leading-[9rem] fullHdMinWidth:text-[12rem] fullHdMinWidth:leading-[12rem]">
               <h1>
@@ -30,7 +30,7 @@ const Home = () => {
               <Link href="/kategori">Explore Konten</Link>
             </button>
           </div>
-          <div className="absolute inset-0 w-screen h-[40rem] tabletMinWidth:h-[50rem] desktopMinWidth:relative desktopMinWidth:flex-1 desktopMinWidth:h-[50rem] fullHdMinWidth:h-[55rem]">
+          <div className="absolute inset-0 w-screen h-[40rem] tabletMinWidth:h-[55rem] desktopMinWidth:relative desktopMinWidth:flex-1 desktopMinWidth:h-[50rem] fullHdMinWidth:h-[55rem]">
             <Image
               src={homeBackground}
               alt="background"

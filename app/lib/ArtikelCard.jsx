@@ -25,7 +25,7 @@ export default function ArtikelCard({
       <div className="absolute left-0 top-0 backdrop-opacity-0 backdrop-invert bg-black/20 w-full h-full"></div>
       <div className="relative text-white flex flex-1 flex-col justify-center px-5 py-10 laptopMinWidth:px-10 desktopMinWidth:px-20">
         <h1
-          className={`font-DrukBoldTrial text-6xl font-bold tabletMinWidth:text-7xl desktopMinWidth:text-8xl fullHdMinWidth:text-9xl`}
+          className={`font-DrukBoldTrial text-6xl font-bold tabletMinWidth:text-7xl fullHdMinWidth:text-8xl`}
         >
           {mainTitle}
         </h1>
