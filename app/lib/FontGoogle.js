@@ -1,19 +1,19 @@
-import { Montserrat, Poppins } from "next/font/google";
+import { Montserrat, Poppins, Roboto } from 'next/font/google';
 
 export const montserratFont = Montserrat({
-  style: ["normal"],
-  subsets: ["latin"],
-  weight: ["400"],
-});
-
-export const montserratItalicFont = Montserrat({
-  style: ["italic"],
-  subsets: ["latin"],
-  weight: ["200"],
+  style: ['normal'],
+  subsets: ['latin'],
+  weight: ['400'],
 });
 
 export const poppinsFont = Poppins({
-  style: ["normal"],
-  subsets: ["latin"],
-  weight: ["400"],
+  style: ['normal'],
+  subsets: ['latin'],
+  weight: ['400'],
+});
+
+export const robotoFont = Roboto({
+  style: ['normal'],
+  subsets: ['latin'],
+  weight: ['400'],
 });

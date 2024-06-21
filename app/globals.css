@@ -5,34 +5,13 @@
 /* font */
 
 @font-face {
-  font-family: "NewEleganceCondltaFont";
-  src: url("../font/TheNewElegance-CondIta.otf") format("opentype");
+  font-family: 'DrukBoldTrial';
+  src: url('../font/Druk-Bold-Trial.otf') format('truetype');
 }
 
 @font-face {
-  font-family: "NewEleganceCondensedFont";
-  src: url("../font/TheNewElegance-Regular.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "MonaSansUltraLightWide";
-  src: url("../font/Mona-Sans.woff2") format("woff2 supports variations"),
-    url("../font/Mona-Sans.woff2") format("woff2-variations");
-  font-weight: 200;
-  font-stretch: 125%;
-}
-
-@font-face {
-  font-family: "MonaSansUltraLight";
-  src: url("../font/Mona-Sans.woff2") format("woff2 supports variations"),
-    url("../font/Mona-Sans.woff2") format("woff2-variations");
-  font-weight: 200;
-  font-stretch: 100%;
-}
-
-@font-face {
-  font-family: "DrukBoldTrial";
-  src: url("../font/Druk-Bold-Trial.otf") format("truetype");
+  font-family: 'DrukMediumTrial';
+  src: url('../font/Druk-Medium-Trial.otf') format('truetype');
 }
 
 :root {
@@ -58,14 +37,4 @@
 
 body {
   overflow-x: hidden;
-}
-
-/* component style */
-
-.section-minscreen {
-  @apply relative w-screen min-h-screen;
-}
-
-.section-without-minscreen {
-  @apply relative w-screen min-h-screen;
 }
