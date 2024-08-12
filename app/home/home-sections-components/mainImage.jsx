@@ -1,5 +1,5 @@
 import Image from "next/image";
-import homeBackground from "../../../public/img/narasihistorian cover bg.jpg";
+import homeBackground from "../../../public/img/40.jpg";
 
 export default function MainImage() {
   return (
