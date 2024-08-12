@@ -1,9 +1,9 @@
-import HomeSection from './home/Home';
+import HomeSection from "./home/Home";
 
 export default function Home() {
   return (
     <>
-      <main>
+      <main className="">
         <HomeSection />
       </main>
     </>

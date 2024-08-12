@@ -1,25 +1,25 @@
-'use client';
+"use client";
 
-import clsx from 'clsx';
-import { motion } from 'framer-motion';
-import { routes } from '../lib/routesNavbar';
-import { usePathname } from 'next/navigation';
+import { routes } from "../lib/routesNavbar";
+import { usePathname } from "next/navigation";
+import { clsx } from "clsx";
+import { motion } from "framer-motion";
 
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function DesktopNavbar() {
   const activePathname = usePathname();
 
   return (
     <>
-      <ul className="flex text-white items-center gap-x-5 text-base tabletMinWidth:text-2xl fullHdMinWidth:text-3xl">
+      <ul className="flex text-white items-center gap-x-5 text-base tabletMinWidth:gap-x-10 tabletMinWidth:text-2xl fullHdMinWidth:text-3xl">
         {routes.map((route) => (
           <li
             className={clsx(
-              'relative z-10 hover:text-[#fedf16e0] transition pb-3',
+              "relative z-10 hover:text-[#fedf16e0] transition pb-3",
               {
-                'text-[#fedf16e0]': activePathname === route.path,
-                'text-white': activePathname !== route.path,
+                "text-[#fedf16e0]": activePathname === route.path,
+                "text-white": activePathname !== route.path,
               }
             )}
             key={route.path}

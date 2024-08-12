@@ -1,14 +1,14 @@
-import Link from 'next/link';
+import Link from "next/link";
 import {
   AiOutlineInstagram,
   AiOutlineMail,
   AiOutlineYoutube,
-} from 'react-icons/ai';
+} from "react-icons/ai";
 
 export default function Footer() {
   return (
     <footer className="relative text-white z-10 w-full min-h-[5vh] bg-[#2F2F31] px-[5%] py-5 flex flex-row justify-between items-center text-lg tabletMinWidth:text-xl laptopMinWidth:text-2xl">
-      <small>2024 Create By NarasiHistorian</small>
+      <small>2024 NarasiHistorian</small>
 
       <div className="flex items-center gap-3">
         <div className="">

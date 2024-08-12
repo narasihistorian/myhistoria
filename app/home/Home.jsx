@@ -1,7 +1,5 @@
-import MainTitle from './home-sections-components/mainTitle';
-import MainImage from './home-sections-components/mainImage';
-
-// main component --------------------------------------------------
+import MainTitle from "./home-sections-components/mainTitle";
+import MainImage from "./home-sections-components/mainImage";
 
 const Home = () => {
   return (

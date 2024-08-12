@@ -1,9 +1,9 @@
-import Image from 'next/image';
-import homeBackground from '../../../public/img/new-bg-1.jpg';
+import Image from "next/image";
+import homeBackground from "../../../public/img/narasihistorian cover bg.jpg";
 
 export default function MainImage() {
   return (
-    <div className="absolute inset-0 w-full h-[100vh] desktopMinWidth:w-[50%] desktopMinWidth:left-[50%] ">
+    <div className="absolute inset-0 w-full h-[100vh]">
       <Image
         src={homeBackground}
         alt="background"
@@ -11,7 +11,7 @@ export default function MainImage() {
         quality={100}
         fill
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        style={{ objectFit: 'cover' }}
+        style={{ objectFit: "cover" }}
       />
       <div className="absolute left-0 top-0 backdrop-opacity-0 backdrop-invert bg-black/30 w-full h-full"></div>
     </div>

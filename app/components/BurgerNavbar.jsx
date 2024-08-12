@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
-import { routes } from '../lib/routesNavbar';
-import Link from 'next/link';
+import { useState } from "react";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { routes } from "../lib/routesNavbar";
+import Link from "next/link";
 
 export default function BurgerNavbar() {
   const [nav, setNav] = useState(true);
@@ -23,8 +23,8 @@ export default function BurgerNavbar() {
       <div
         className={
           !nav
-            ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-zinc-800 ease-in-out duration-500 z-20 '
-            : 'fixed left-[-100%]'
+            ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-zinc-800 ease-in-out duration-500 z-20 "
+            : "fixed left-[-100%]"
         }
       >
         <h1 className="text-2xl text-white p-5 uppercase">
@@ -44,8 +44,8 @@ export default function BurgerNavbar() {
       <div
         className={
           !nav
-            ? 'fixed left-0 top-0 w-screen h-screen backdrop-blur-sm bg-white/30 ease-in-out duration-500 '
-            : 'fixed'
+            ? "fixed left-0 top-0 w-screen h-screen backdrop-blur-sm bg-white/30 ease-in-out duration-500 "
+            : "fixed"
         }
       ></div>
     </>
