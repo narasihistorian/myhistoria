@@ -1,10 +1,10 @@
-import App from "./components/App";
+import HomeSection from "./home/Home";
 
 export default function Home() {
   return (
     <>
       <main className="">
-        <App />
+        <HomeSection />
       </main>
     </>
   );
