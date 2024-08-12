@@ -5,6 +5,7 @@ import ageOfDiscovery from "../../public/img/age-of-discovery.jpg";
 import napoleonicWar from "../../public/img/napoleonic-war.jpg";
 import worldWar from "../../public/img/world-war-2.jpg";
 import coldWar from "../../public/img/cold-war.jpg";
+import imageBackground from "../../public/img/50.jpg";
 
 const AncientRome = () => {
   return (
@@ -54,6 +55,23 @@ const ColdWar = () => {
   );
 };
 
+const ImageBackground = () => {
+  return (
+    <div className="absolute inset-0 w-full h-[100vh]">
+      <Image
+        src={imageBackground}
+        alt="background"
+        placeholder="blur"
+        quality={100}
+        fill
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        style={{ objectFit: "cover" }}
+      />
+      ;
+    </div>
+  );
+};
+
 export {
   AncientRome,
   MiddleAges,
@@ -61,4 +79,5 @@ export {
   NapoleonicWar,
   WorldWar,
   ColdWar,
+  ImageBackground,
 };

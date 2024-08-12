@@ -1,9 +1,5 @@
-import React from 'react';
+import React from "react";
 
 export default function Container({ children }) {
-  return (
-    <div className="w-screen h-screen">
-      {children}
-    </div>
-  );
+  return <div className="w-screen">{children}</div>;
 }
