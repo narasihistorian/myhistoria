@@ -1,43 +1,29 @@
-"use client";
+import { montserratFont } from "../lib/FontGoogle";
 
-import { routes } from "../lib/routesNavbar";
-import { usePathname } from "next/navigation";
-import { clsx } from "clsx";
-import { motion } from "framer-motion";
+import Image from "next/image";
 
-import Link from "next/link";
+import logo from "../../public/img/logo-narasihistorian-1-02-1.png";
+import NavbarMenu from "./NavbarMenu";
 
 export default function DesktopNavbar() {
-  const activePathname = usePathname();
-
   return (
-    <>
-      <ul className="flex text-white items-center gap-x-5 text-base tabletMinWidth:gap-x-10 tabletMinWidth:text-2xl fullHdMinWidth:text-3xl">
-        {routes.map((route) => (
-          <li
-            className={clsx(
-              "relative z-10 hover:text-[#fedf16e0] transition pb-3",
-              {
-                "text-[#fedf16e0]": activePathname === route.path,
-                "text-white": activePathname !== route.path,
-              }
-            )}
-            key={route.path}
-          >
-            <Link href={route.path} target={route.target}>
-              {route.name}
-            </Link>
+    <nav
+      className={`${montserratFont.className} z-10 px-[5%] fixed flex justify-between items-center w-full min-h-[10vh]`}
+    >
+      <div className="relative z-10 w-[15rem] h-[5rem] tabletMinWidth:w-[25rem] fullHdMinWidth:w-[30rem]">
+        <Image
+          alt="logo navbar"
+          src={logo}
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          style={{ objectFit: "cover" }}
+        />
+      </div>
 
-            {activePathname === route.path && (
-              <motion.div
-                layoutId="header-active-link"
-                className="bg-[#fedf16e0] h-1 w-full absolute bottom-0"
-              ></motion.div>
-            )}
-          </li>
-        ))}
+      <ul className="flex text-white items-center gap-x-5 text-base tabletMinWidth:gap-x-10 tabletMinWidth:text-2xl fullHdMinWidth:text-3xl">
+        <NavbarMenu />
       </ul>
       <div className="absolute left-0 top-0 backdrop-opacity-10 backdrop-invert bg-black/10 w-full h-full"></div>
-    </>
+    </nav>
   );
 }
