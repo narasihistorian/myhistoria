@@ -5,7 +5,7 @@ import ageOfDiscovery from "../../public/img/age-of-discovery.jpg";
 import napoleonicWar from "../../public/img/napoleonic-war.jpg";
 import worldWar from "../../public/img/world-war-2.jpg";
 import coldWar from "../../public/img/cold-war.jpg";
-import mobileBg from "../../public/img/bg-mobile-narasihistorian-2.jpg";
+import mobileBg from "../../public/img/bg-mobile-very-high-res.jpg";
 
 const MobileBg = () => {
   return (
