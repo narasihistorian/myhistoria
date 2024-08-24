@@ -5,14 +5,14 @@ import ageOfDiscovery from "../../public/img/age-of-discovery.jpg";
 import napoleonicWar from "../../public/img/napoleonic-war.jpg";
 import worldWar from "../../public/img/world-war-2.jpg";
 import coldWar from "../../public/img/cold-war.jpg";
-import mobileBg from "../../public/img/bg mobile narasihistorian.jpg";
+import mobileBg from "../../public/img/bg-mobile-narasihistorian-2.jpg";
 
 const MobileBg = () => {
   return (
-    <div className="relative w-full h-full desktopMinWidth:hidden">
+    <div className="relative w-full h-[100vh] desktopMinWidth:hidden">
       <Image
         alt="pic"
-        src={ancientRome}
+        src={mobileBg}
         placeholder="blur"
         fill={true}
         style={{ objectFit: "cover" }}
