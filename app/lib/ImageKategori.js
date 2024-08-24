@@ -12,7 +12,7 @@ const MobileBg = () => {
     <div className="relative w-full h-full desktopMinWidth:hidden">
       <Image
         alt="pic"
-        src={mobileBg}
+        src={ancientRome}
         placeholder="blur"
         fill={true}
         style={{ objectFit: "cover" }}
