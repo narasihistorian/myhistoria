@@ -21,7 +21,7 @@ export default function SearchForm() {
     >
       <IoSearchCircleSharp className="fill-[#fedf16e0]" size={35} />
       <input
-        className="bg-[#2F2F31]/50 w-[60%] border text-base px-5 py-2 outline-none ring-[#FEDF16]/50 transition focus:ring-2 tabletMinWidth:text-2xl tabletMinWidth:w-[45%] laptopMinWidth:w-[40%] desktopMinWidth:w-[30%]"
+        className="bg-[#2F2F31]/50 w-full border text-base px-5 py-2 outline-none ring-[#FEDF16]/50 transition focus:ring-2 tabletMinWidth:text-2xl"
         type="text"
         value={searchText}
         onChange={(event) => {

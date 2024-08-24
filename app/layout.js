@@ -1,6 +1,7 @@
 import Container from "./components/Container";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import VideoBackground from "./components/VideoBackground";
 import "./globals.css";
 import { Inter } from "next/font/google";
 
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.className} bg-zinc-800 text-white`}>
+        <VideoBackground />
         <Container>
           <Header />
           {children}

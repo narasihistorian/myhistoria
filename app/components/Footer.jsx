@@ -4,12 +4,16 @@ import {
   AiOutlineMail,
   AiOutlineYoutube,
 } from "react-icons/ai";
+import { robotoFont } from "../lib/FontGoogle";
 
 export default function Footer() {
   return (
-    <footer className="relative text-white z-10 w-full min-h-[5vh] bg-[#2F2F31] px-[5%] py-5 flex flex-row justify-between items-center text-lg tabletMinWidth:text-xl laptopMinWidth:text-2xl">
-      <small>2024 NarasiHistorian</small>
-
+    <footer className="relative mt-auto min-h-[10vh] border-t z-10 gap-2 flex flex-row justify-between items-center">
+      <small
+        className={`${robotoFont.className} text-lg text-[#ffffffe0] font-bold tabletMinWidth:text-2xl`}
+      >
+        2024 NarasiHistorian
+      </small>
       <div className="flex items-center gap-3">
         <div className="">
           <Link href="mailto:agungrosyandi@gmail.com">

@@ -8,15 +8,15 @@ export default function Kategori({ params }) {
 
   return (
     <main>
-      <section className="relative w-full px-[5%]">
-        <div className="flex flex-col justify-center items-center py-[25%] text-white desktopMinWidth:py-[10%]">
+      <section className="relative w-full">
+        <div className="flex flex-col justify-center items-center py-10 text-white">
           <H1TitleKategori>
             {text === "all" && "Kategori Historian"}
             {text !== "all" &&
               `Berkaitan dengan ${text.charAt(0).toUpperCase() + text.slice(1)}
               `}
           </H1TitleKategori>
-          <div className="grid grid-cols-6 grid-flow-row gap 1">
+          <div className="grid grid-cols-6 grid-flow-row gap-5">
             {KategoriMainCard.map((kategori) => (
               <KategoriCard
                 key={kategori.id}

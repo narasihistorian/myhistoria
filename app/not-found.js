@@ -1,9 +1,9 @@
-import { montserratFont } from './lib/FontGoogle';
+import { montserratFont } from "./lib/FontGoogle";
 
 export default function NotFoundPage() {
   return (
     <main>
-      <section className="relative w-screen h-screen bg-zinc-800">
+      <section className="relative h-[80vh]">
         <div className="relative w-full h-full flex flex-col justify-center items-center py-20 px-10">
           <div className=" text-white">
             <h1 className="font-MonaSansUltraLightWide text-4xl text-center tabletMinWidth:text-6xl laptopMinWidth:text-7xl">
