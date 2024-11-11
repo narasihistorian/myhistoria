@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import Home from './Home';
-import { useEffect } from 'react';
-import Lenis from 'lenis';
+import Home from "./Home";
+import { useEffect } from "react";
+import Lenis from "lenis";
 
 export default function App() {
   const lenis = new Lenis({
@@ -10,7 +10,7 @@ export default function App() {
   });
 
   useEffect(() => {
-    lenis.on('scroll', (e) => {
+    lenis.on("scroll", (e) => {
       console.log(e);
     });
   }, []);
