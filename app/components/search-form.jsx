@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import { useRouter } from "next/navigation";
-import { useState } from "react";
-import { IoSearchCircleSharp } from "react-icons/io5";
+import { useRouter } from 'next/navigation';
+import { useState } from 'react';
+import { IoSearchCircleSharp } from 'react-icons/io5';
 
 export default function SearchForm() {
-  const [searchText, setSearchText] = useState("");
+  const [searchText, setSearchText] = useState('');
   const router = useRouter();
 
   const handleSubmit = (event) => {
@@ -21,7 +21,7 @@ export default function SearchForm() {
     >
       <IoSearchCircleSharp className="fill-[#fedf16e0]" size={35} />
       <input
-        className="bg-[#2F2F31]/50 w-full border text-base px-5 py-2 outline-none ring-[#FEDF16]/50 transition focus:ring-2 tabletMinWidth:text-2xl"
+        className="bg-[#2F2F31]/50 w-full border text-base px-5 py-2 outline-none ring-[#FEDF16]/50 transition focus:ring-2 tabletMinWidth:text-2xl desktopMinWidth:text-xl"
         type="text"
         value={searchText}
         onChange={(event) => {

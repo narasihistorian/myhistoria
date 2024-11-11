@@ -1,4 +1,4 @@
-import DesktopNavbar from "./DesktopNavbar";
+import DesktopNavbar from './DesktopNavbar';
 
 const Navbar = () => {
   return <DesktopNavbar />;

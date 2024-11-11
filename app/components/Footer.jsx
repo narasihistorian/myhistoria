@@ -1,16 +1,16 @@
-import Link from "next/link";
+import Link from 'next/link';
 import {
   AiOutlineInstagram,
   AiOutlineMail,
   AiOutlineYoutube,
-} from "react-icons/ai";
-import { robotoFont } from "../lib/FontGoogle";
+} from 'react-icons/ai';
+import { robotoFont } from '../lib/FontGoogle';
 
 export default function Footer() {
   return (
-    <footer className="relative mt-auto min-h-[10vh] border-t z-10 gap-2 flex flex-row justify-between items-center">
+    <footer className="relative mt-auto min-h-[10vh] px-[5%] z-10 gap-2 flex flex-row justify-between items-center">
       <small
-        className={`${robotoFont.className} text-lg text-[#ffffffe0] font-bold tabletMinWidth:text-2xl`}
+        className={`${robotoFont.className} text-base text-[#ffffffe0] font-bold tabletMinWidth:text-2xl desktopMinWidth:text-xl`}
       >
         2024 NarasiHistorian
       </small>

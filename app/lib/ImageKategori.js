@@ -1,11 +1,11 @@
-import Image from "next/image";
-import ancientRome from "../../public/img/ancient-rome.jpg";
-import middleAges from "../../public/img/medieval-age.jpg";
-import ageOfDiscovery from "../../public/img/age-of-discovery.jpg";
-import napoleonicWar from "../../public/img/napoleonic-war.jpg";
-import worldWar from "../../public/img/world-war-2.jpg";
-import coldWar from "../../public/img/cold-war.jpg";
-import mobileBg from "../../public/img/bg-mobile-very-high-res.jpg";
+import Image from 'next/image';
+import ancientRome from '../../public/img/ancient-rome.jpg';
+import middleAges from '../../public/img/medieval-age.jpg';
+import ageOfDiscovery from '../../public/img/age-of-discovery.jpg';
+import napoleonicWar from '../../public/img/napoleonic-war.jpg';
+import worldWar from '../../public/img/world-war-2.jpg';
+import coldWar from '../../public/img/cold-war.jpg';
+import mobileBg from '../../public/img/bg-mobile-very-high-res.jpg';
 
 const MobileBg = () => {
   return (
@@ -15,7 +15,7 @@ const MobileBg = () => {
         src={mobileBg}
         placeholder="blur"
         fill={true}
-        style={{ objectFit: "cover" }}
+        style={{ objectFit: 'cover' }}
       />
     </div>
   );
